@@ -1,0 +1,153 @@
+body {
+    font-family: sans-serif;
+    background-image: url('/jhandai_padheko/resources/images/system/background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.error-message{
+	color: red;
+	text-align: center;
+	font-weight: bold;
+}
+
+.success-message{
+	color: seagreen;
+	text-align: center;
+	font-weight: bold;
+}
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Light, slightly transparent white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding for more internal space */
+    width: 350px; /* Increased width for a larger box */
+    display: flex; /* Use flexbox to arrange logo and form vertically */
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.logo-container {
+    margin-bottom: 20px; /* Add some space below the logo */
+    text-align: center; /* Center the logo within its container */
+}
+
+.logo-container img {
+    max-width: 150px; /* Adjust the maximum width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin-bottom for spacing */
+    color: #333;
+    font-size: 1.5em; /* Slightly larger heading */
+}
+
+.input-group {
+    margin-bottom: 25px; /* Increased margin-bottom between input groups */
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.input-group i {
+    padding: 12px; /* Increased padding for icon */
+    color: #555;
+    min-width: 40px; /* Increased min-width for icon space */
+    text-align: center;
+    font-size: 1.2em; /* Slightly larger icon */
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    border: none;
+    padding: 12px 15px; /* Increased padding for input fields */
+    flex-grow: 1;
+    font-size: 1.1em; /* Slightly larger font in input fields */
+}
+
+.login-button {
+    background-color: #28a745; /* Green */
+    color: #f8f9fa; /* White */
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px; /* Increased padding for the button */
+    font-size: 1.1em; /* Slightly larger font on the button */
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px; /* Add some space below the login button */
+}
+
+.forgot-password {
+    text-align: center;
+    font-size: 0.9em;
+    color: #050306;
+}
+
+.forgot-password a {
+    color: #06040a;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px; /* Add space below "Forgot Password?" */
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
+
+.social-button img {
+    max-height: 24px;
+    margin-right: 10px;
+}
+
+.social-apple {
+    background-color: #ffc102; /* Dark background for Apple (as in the image) */
+    color: #f8f9fa; /* White text */
+}
+
+.social-google {
+    background-color: #ffc107; /* White */
+    color: #333; /* Dark text */
+    border: 1px solid #ddd; /* Add a border */
+}
+
+.social-facebook {
+    background-color: #ffc107; /* Facebook blue (as in the image) */
+    color: #f8f9fa; /* White text */
+}
+
+.register-link {
+	text-align: center;
+	font-size: 14px;
+}

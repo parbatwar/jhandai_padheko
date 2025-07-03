@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* Basic reset and font */
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+}
+
+/* Container with sidebar + content */
+.container {
+	display: flex;
+	min-height: 100vh;
+	width: 100%;
+}
+
+/* Content area */
+.content {
+	flex-grow: 1;
+	padding: 30px 40px;
+	background-color: white;
+	box-shadow: inset 0 0 10px #ddd;
+}
+
+/* Header and info-boxes */
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.info-box {
+	background-color: #e74c3c;
+	color: white;
+	padding: 15px 25px;
+	border-radius: 6px;
+	flex: 1;
+	margin-right: 15px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.info-box:last-child {
+	margin-right: 0;
+}
+
+/* Table container */
+.table-container {
+	overflow-x: auto;
+	width: 100%;
+}
+
+.table-container h3 {
+	margin-bottom: 15px;
+	color: #2c3e50;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+/* Table styling */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+}
+
+thead {
+	background-color: #34495e;
+	color: white;
+}
+
+th, td {
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	text-align: left;
+	font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #f4f6f8;
+}
+
+tbody tr:hover {
+	background-color: #eaeaea;
+	cursor: default;
+}
+
+/* Action buttons inside table */
+.action-btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	margin: 0 3px;
+}
+
+.action-btn img {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	transition: transform 0.2s ease;
+}
+
+.action-btn:hover img {
+	transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media ( max-width : 768px) {
+	.container {
+		flex-direction: column;
+	}
+	.sidebar {
+		width: 100%;
+		flex-direction: row;
+		padding: 0;
+	}
+	.sidebar .nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 100%;
+	}
+	.sidebar .nav li a {
+		padding: 10px;
+		border-left: none;
+		font-size: 14px;
+	}
+	.logout {
+		padding: 10px;
+		text-align: center;
+	}
+	.content {
+		padding: 20px;
+	}
+	.card {
+		flex-direction: column;
+		text-align: center;
+	}
+	.card p {
+		max-width: 100%;
+		margin-bottom: 15px;
+	}
+}

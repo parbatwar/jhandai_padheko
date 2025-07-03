@@ -1,0 +1,116 @@
+@charset "UTF-8";
+body {
+	    background-image: url('../resources/images/system/background.png');
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-position: center;
+	    width: 100%;
+        overflow-x: hidden;
+        font-family: Helvetica;
+ }
+ 
+ .title {
+	font-size: 25px;
+	text-align: center;
+    margin: 10px 0;
+    color: #566068; 
+ }
+ 
+ .search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 600px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2897d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #1b6fa8;
+}
+ 
+ 
+ .audiobooks{
+  display: flex; 
+  justify-content: center;
+  gap: 64px;
+  padding: 20px;
+}
+      
+.books-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 255px;
+  height: 455px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+    
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);   
+}
+
+.books-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  background-color: #f5f9ff;
+}
+.books-card img{
+  border: 1px solid black;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+  height: 300;
+}
+
+.books-card:hover img {
+  transform: scale(1.02);
+}
+      
+.card-info{
+  text-align: center;
+}
+      
+ .dwn-button {
+    background-color: #2897d2;
+    color: white;
+    margin: 10px;
+    padding: 9px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .dwn-button:hover {
+    background-color: #1b6fa8;
+  }
